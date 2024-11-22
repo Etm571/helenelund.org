@@ -3,7 +3,7 @@ let menuData = null;
 
 async function fetchMenu() {
     try {
-        const response = await fetch('https://services.helenelund.org/menu');
+        const response = await fetch('https://services.helenelund.org/api/lunch');
         const data = await response.json();
         menuData = data;
         renderMenu(currentWeekIndex);
