@@ -1,6 +1,6 @@
 async function fetchMenu() {
     try {
-        const response = await fetch('https://services.helenelund.org/api/lunch');
+        const response = await fetch('https://helenelund.org/api/lunch');
         if (!response.ok) {
             throw new Error('الاستجابة من الشبكة لم تكن جيدة'); // "Network response was not ok"
         }
